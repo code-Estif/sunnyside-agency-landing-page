@@ -1,15 +1,12 @@
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
   line-height: 1.6;
   color: #23303e;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -475,6 +472,9 @@ h3 {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  body{
+    padding: 0;
+  }
   .nav-links {
     display: none;
   }
@@ -485,7 +485,7 @@ h3 {
   
   /* Hero Section Mobile */
   .hero {
-    background: linear-gradient(to bottom, #3ebfff 0%, #3ebfff 50%, #ffd700 50%, #ffd700 100%);
+    background: linear-gradient(to bottom, #3ebfff 0%, #3ebfff 50%);
     min-height: 100vh;
     padding-top: 6rem;
   }
@@ -500,6 +500,7 @@ h3 {
   .hero-image img {
     width: 100%;
     max-width: 375px;
+    margin: 0;
   }
   
   /* Main Content Mobile - Single Column */
@@ -615,26 +616,8 @@ h3 {
   
   /* Footer Mobile */
   .footer-nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
   }
 }
 
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2rem;
-    letter-spacing: 0.125rem;
-  }
-  
-  .text-content h2 {
-    font-size: 1.75rem;
-  }
-  
-  .service-content h3 {
-    font-size: 1.5rem;
-  }
-  
-  .hero-image img {
-    max-width: 320px;
-  }
-}
