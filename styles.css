@@ -1,5 +1,9 @@
 
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
@@ -163,7 +167,7 @@ h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 6rem;
+  left: 0;
 }
 
 .hero h1 {
@@ -176,7 +180,7 @@ h3 {
 }
 
 .arrow {
-  margin-top: 0rem;
+  margin: 0;
   z-index: 2;
 }
 
@@ -203,9 +207,7 @@ h3 {
   grid-template-rows: repeat(3, 1fr);
   min-height: 1200px;
   width: 100%;
-  gap: 0;
-  padding: 0;
-  margin: 0;
+  
 }
 
 .content-section {
@@ -474,6 +476,8 @@ h3 {
 @media (max-width: 768px) {
   body{
     padding: 0;
+    margin: 0;
+    overflow-x: hidden;
   }
   .nav-links {
     display: none;
@@ -485,9 +489,11 @@ h3 {
   
   /* Hero Section Mobile */
   .hero {
-    background: linear-gradient(to bottom, #3ebfff 0%, #3ebfff 50%);
     min-height: 100vh;
     padding-top: 6rem;
+    margin: 0;
+    width: 100%;
+    padding: 0;
   }
   
   .hero h1 {
